@@ -1,15 +1,6 @@
-//chrome.browserAction.onClicked.addListener(function(tab) {execute()});
 
-
-var counter = 0;
-chrome.browserAction.onClicked.addListener(function (tab) {
-    counter++;
-    if (counter == 5) {
-        alert("Hey !!! You have clicked five times");
-    }
-});
-
-chrome.webNavigation.onHistoryStateUpdated.addListener(function(){name = window.location.hostname;
+/*
+chrome.webNavigation.onHistoryStateUpdated.addListener(function(){let name = window.location.hostname;
     names = name.split(".");
     if (names[1] == "youtube") {
         //Removes the startpageshit
@@ -29,9 +20,4 @@ chrome.webNavigation.onHistoryStateUpdated.addListener(function(){name = window.
     }
 });
 
-
-
-/*window.addEventListener("hashchange", execute(), true);
-
-body.addEventListener("yt-navigate-finish", function(event) {
-execute()});*/
+*/
