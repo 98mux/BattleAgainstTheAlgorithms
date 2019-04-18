@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Battle Against The Algorithms",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+
+        "<all_urls>"
+      ],
+      "js": [
+        "youtube.js"
+      ],
+	  "run_at": "document_start"
+    }
+  ],
+
+
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+
+  }
+}
